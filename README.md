@@ -56,7 +56,7 @@ Date Functions: Using EXTRACT() and CURRENT_DATE for dynamic time-based filterin
 # Featured Queries & Analysis
 ### Handling Unnormalized Data (Actor Analysis)
 Because the casts column contains multiple names in a single string, I used UNNEST to expand the data for an accurate count of appearances.
-
+``` sql
 SELECT
    actor,
    count(*) as total_movies 
@@ -70,8 +70,9 @@ GROUP BY
     actor
 ORDER BY total_movies DESC
 LIMIT 20
+```
 
-# Finding the Longest Content per Type (Correlated Subquery)
+### Finding the Longest Content per Type (Correlated Subquery)
 This query identifies the longest movie (in minutes) and the longest TV show (by seasons) dynamically.
 
 ``` sql

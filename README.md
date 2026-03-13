@@ -54,8 +54,9 @@ Subqueries: Implementing Correlated Subqueries to find the longest content per t
 Date Functions: Using EXTRACT() and CURRENT_DATE for dynamic time-based filtering.
 
 # Featured Queries & Analysis
-## Handling Unnormalized Data (Actor Analysis)
+### Handling Unnormalized Data (Actor Analysis)
 Because the casts column contains multiple names in a single string, I used UNNEST to expand the data for an accurate count of appearances.
+
 SELECT
    actor,
    count(*) as total_movies 
@@ -73,7 +74,8 @@ LIMIT 20
 # Finding the Longest Content per Type (Correlated Subquery)
 This query identifies the longest movie (in minutes) and the longest TV show (by seasons) dynamically.
 
-SELECT 
+``` sql
+    SELECT 
     show_id,
     title,
     duration
@@ -90,6 +92,7 @@ WHERE
                     n1.type=n2.type
                         
             )
+```
 # Insights Found
 Content Mix: The library is heavily weighted towards Movies, though TV Shows show a higher density of long-term engagement (seasons).
 

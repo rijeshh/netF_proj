@@ -1,13 +1,14 @@
 # Netflix Content Strategy & Data Analysis (SQL)
-      - Research and analysis on Netflix's library to uncover trends in content distribution, genres, and cast performance using PostgreSQL.
+Research and analysis on Netflix's library to uncover trends in content distribution, genres, and cast performance using PostgreSQL.
 ##  Introduction
-###Objective:
-    - The goal of this project is to analyze Netflix's dataset to answer key business questions regarding content types, geographical distribution, and historical trends.
 
-###Dataset: 
-    - The dataset for this project is sourced from Kaggle and contains information on over 8,000 titles available on Netflix.
+### Objective:
+The goal of this project is to analyze Netflix's dataset to answer key business questions regarding content types, geographical distribution, and historical trends.
 
-Key Columns:
+### Dataset:
+The dataset for this project is sourced from Kaggle and contains information on over 8,000 titles available on Netflix.
+
+### Key Columns:
 
 show_id: Unique identifier for every movie/show.
 
